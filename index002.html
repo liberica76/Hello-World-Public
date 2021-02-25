@@ -1,0 +1,166 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Практична робота №1
+       
+    
+    </title>
+
+    <style>
+        div {
+            background: #d0c7ab url(https://thumbs.dreamstime.com/b/%D0%BF%D0%B5%D1%81%D0%BE%D0%BA-%D0%BF%D1%83%D1%81%D1%82%D1%8B%D0%BD%D0%B8-5019074.jpg); /* Цвет фона и путь к файлу веб */
+            
+            
+         
+            border: 10px double #565656;
+            border-radius: 30px;
+        }
+        form {
+            background:transparent;
+            padding: 10px;
+            width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        button{
+            border: 1px solid #565656;
+            background: rgb(201, 167, 167);
+            border-radius: 7px;
+            padding: 5px 15px;
+        }
+         
+    </style>
+</head>
+<body>
+    <div>
+        <form >
+            <h2 align="left">    
+                <p>Практична робота №1.</p>
+            </h2>
+            <h3 align="left" p>Виконав студент групи №ЗПІ-Зп03 Маньковский В.О.</p> 
+                
+            </h3>
+            
+           
+ 
+
+
+ 
+<button id="button2">Oголошення функції function declaration </button>
+
+<script >
+
+
+  button2.onclick = function(event) { // Непрацює належним чином.
+    if (event) {
+   
+    let name = "Вася";// дефолтне значення
+     
+       
+        function showMessage() {
+  let message = 'Привет, ' + name;
+  alert(message);
+}
+
+showMessage();  //визиваємо метод
+
+alert( message ); // Вітаємося + дефолтне значення
+
+ 
+
+
+    }
+  }
+
+</script>
+<p><button id="button3">Function Expression (Функциональное Выражение).</p>
+
+<script >
+
+
+  button3.onclick = function(event) {
+    if (event) {
+       
+        let sayHi = function() {
+     let name=prompt("Як вас звати? "," " );
+            alert( "Привет "+ name );
+        
+    }
+
+    sayHi();
+ 
+}
+}
+
+</script>
+<p><button id="button4">() => стрілкові або анонімні функції
+    ,вкладені функції
+</p>
+
+    <script >
+    
+    
+      button4.onclick = function(event) {
+        if (event) {
+            function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
+}
+
+ask(
+  "Вы согласны?",
+  () => alert("Вы согласились."),
+  () => alert("Вы отменили выполнение.")
+);
+            
+}
+}
+    
+
+    </script>
+
+    <p ><button id="button5">Замикань     </p>
+
+      
+        <script>
+        
+        button5.onclick = function(event) {
+           if(event){
+            function makeWorker() {
+                let name = "Pete";// умовно зовнішння перемінна
+
+              return function() {
+               alert(name);
+              };     
+             }
+
+             let name = "John";
+              // alert(name);
+             // створення функції
+             let work = makeWorker();
+
+             // визов функції
+             work();
+
+
+           }
+                
+    }
+    
+</script>
+     
+    
+
+           
+            <button type="git.hap ">
+              <li><a href="https://github.com/liberica76/Hello-world/commit/f20cfec77af4aba270c4e6ea4c43995fd0f69d97"> git.hap </a></li>
+
+            </button>
+            
+
+        </form>
+    </div>
+</body>
+</html>
