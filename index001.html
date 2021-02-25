@@ -1,0 +1,166 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+       Вступна практична робота №0
+       
+    
+    </title>
+
+    <style>
+        div {
+            background: #c7bc9b url(http://oboi-dlja-stola.ru/file/9483/760x0/16:9/%D0%9F%D0%B5%D1%81%D0%BE%D0%BA-%D0%BF%D1%83%D1%81%D1%82%D1%8B%D0%BD%D0%B8.jpg); /* Цвет фона и путь к файлу веб */
+            
+            
+         
+            border: 10px double #565656;
+            border-radius: 30px;
+        }
+        form {
+            background: #c5ad92;
+            padding: 10px;
+            width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        button {
+            border: 1px solid #565656;
+            background: white;
+            border-radius: 7px;
+            padding: 5px 15px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form >
+            <h2 align="left">    
+                <p></p>Вступна практична робота №0.</p>
+            </h2>
+            <h3 align="left" p>Виконав студент групи №ЗПІ-Зп03 Маньковский В.О.</p> 
+                
+            </h3>
+            <button id="button">JavaScript != Java!</button>
+            <script >
+
+ 
+
+
+  button.onclick = function(event) {
+    if (event) {
+        alert("I JavaSkript not Java!");
+          
+    }
+  }
+
+</script>
+<button id="button2">Return Information</button>
+
+<script >
+
+
+  button2.onclick = function(event) {
+    if (event) {
+        alert("Як тебе звати?!");
+         let name = prompt("Ввести імя", "");
+          alert(`Привіт ${name} !`);
+        
+    }
+  }
+
+</script>
+<p><button id="button3">Оператор ==</p>
+
+<script >
+
+
+  button3.onclick = function(event) {
+    if (event) {
+        let ts =prompt(" Хто розробив JavaScript?", "");
+        if (ts == 'ECMAScript') {
+          alert('Вірно!');
+          }else {
+            alert (`Відповіть неправильна ${ts} !`);
+                }
+
+        
+    }
+  }
+
+</script>
+<p><button id="button4">Оператор та цикл if</p>
+
+    <script >
+    
+    
+      button4.onclick = function(event) {
+        if (event) {
+            let value = prompt('enter namber', 0);
+            if (value > 0) {
+            alert( "Більше 0" );
+              } else if (value < 0) {
+                   alert( "Менше 0"  );
+              } else if (value == 0){
+                alert(  "Дорівнює 0" );
+            }else {
+    alert( 'Введено не цифру!');
+}
+            
+}
+}
+    
+    </script>
+    <p><button id="button5">Оператор ?</p>
+
+      
+        <script>
+        
+        button5.onclick = function(event) {
+            if (event) {
+                let A,B,C;
+let pointA = prompt("введіть першу цифру", 0);
+if (pointA > 0||pointA < 0){
+    let A= Number(pointA); 
+}else{
+    alert ('not namber!'); 
+    
+}
+
+let pointB = prompt("pointB  plis", 0);
+if (pointB  > 0||pointB  < 0){
+    let B= Number(pointB);
+}else{
+    alert ('not namber!'); 
+}
+
+let pointC =prompt("pointC plis", 0);
+if (pointC  > 0||pointC< 0){
+    let C= Number(pointC);
+}else{
+    alert ('not namber!'); 
+}
+
+let result1;
+
+result1 = (A+B<C)?'More than ' : 'less than  ' ; // не коректне выдображення якщо сума АВ =С
+alert (result1);
+    }
+                
+    }
+    
+</script>
+        
+    
+
+           
+            <button type="git.hap ">
+              <li><a href="https://github.com/liberica76/Hello-world/blob/master/index0.html"> git.hap </a></li>
+
+            </button>
+            
+
+        </form>
+    </div>
+</body>
+</html>
